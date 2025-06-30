@@ -10,4 +10,4 @@
 
 - [インドネシア 🇮🇩](https://github.com/filemjepang/Wallpaper-Hentai/blob/main/README.md)
 - [英語 🇺🇲]()
-- [日本語 🇯🇵]()
+- [日本語 🇯🇵](https://github.com/filemjepang/Wallpaper-Hentai/blob/main/bahasa/jepang.md)
