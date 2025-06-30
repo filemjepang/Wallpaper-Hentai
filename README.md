@@ -8,6 +8,6 @@
 
 # Pilih Bahasa 
 
-- [Indonesia]()
-- [English]()
-- [Japanese]()
+- [Indonesia 🇮🇩](https://github.com/filemjepang/Wallpaper-Hentai/blob/main/README.md)
+- [English 🇺🇲]()
+- [Japanese 🇯🇵](https://github.com/filemjepang/Wallpaper-Hentai/blob/main/bahasa/jepang.md)
