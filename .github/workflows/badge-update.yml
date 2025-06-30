@@ -1,0 +1,36 @@
+name: Update Badge
+
+on:
+  push:
+    paths:
+      - 'wallpaper/**'
+      - 'portrait/**'
+  schedule:
+    - cron: '0 * * * *'  # Setiap jam
+  workflow_dispatch:      # Manual trigger dari GitHub UI
+
+jobs:
+  generate-badge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Jalankan script badge
+        run: |
+          python .github/scripts/generate_badge.py
+
+      - name: Commit dan Push hasil badge
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add badges/*.json
+          git commit -m "Update badge JSON" || echo "No changes to commit"
+          git push
+          
